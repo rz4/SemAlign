@@ -11,5 +11,5 @@ setup(
     license="MIT",
     keywords="NLP Alignment",
     packages=find_packages(exclude=["data", "notebooks"]),
-    install_requires = ["numpy", "re", "scipy"],
+    install_requires = ["numpy", "scipy"],
 )
