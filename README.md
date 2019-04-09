@@ -18,7 +18,7 @@ kernel of a set n-gram size is used to convolve over the sequences in order
 to better match inter-word dependencies.
 
 For more information about how the alignment search works take a look at
-the project notebook [here]().
+the project notebook [here](notebooks/research.ipynb).
 
 ## Installation
 The following ***Pip*** command can be used to install **SemAlign**:
