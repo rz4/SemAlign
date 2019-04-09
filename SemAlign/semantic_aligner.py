@@ -4,8 +4,8 @@ from .sequence_alignment import *
 
 class SemAlign(object):
 
-    def __init__(self, embeddings_path, kernel_size=1, verbose=True):
-        self.lookup = load_embeddings(embeddings_path)
+    def __init__(self, embeddings_path, kernel_size=1, delimiter=',', verbose=True):
+        self.lookup = load_embeddings(embeddings_path, delimiter)
         self.kernel_size = kernel_size
         self.verbose = verbose
 

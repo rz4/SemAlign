@@ -16,7 +16,7 @@ def preprocess_strs(str_list):
         token_list.append(s.split())
     return token_list
 
-def load_embeddings(path):
+def load_embeddings(path, delimiter=','):
     '''
     Method loads embeddings into dictionary look-up table. Embeddings vectors
     are stored as numpy arrays.
@@ -24,9 +24,10 @@ def load_embeddings(path):
     '''
     embeddings = {}
     print("Loading Embeddings...")
+    delimiter = None
     with open(path, 'r') as f:
         for _ in f:
-            row = _.split()
+            row = _.split(delimiter)
             embeddings[str(row[0])] = np.array(row[1:],dtype=float)
     return embeddings
 
