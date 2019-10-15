@@ -4,13 +4,14 @@ Author: Rafael Zamora-Resendiz
 ## Overview
 In this quick project, we explore the use of pre-trained word embeddings for
 sequence-based semantic alignment of text. The algorithm used for sequence-alignment
-used in this short exploration is inspired by the
+in this short exploration was inspired by the
 [Smith-Waterman algorithm](https://en.wikipedia.org/wiki/Smith–Waterman_algorithm)
 commonly used in bioinformatics for local alignment of genetic sequences.
 
-The Smith-Waterman algorithm uses a substitution matrix which encodes whether
-specific genes are the same or not. Here, we explore the use of a similarity
-matrix between words in two texts instead of a substitution matrix to perform the sequence alignment.
+The Smith-Waterman algorithm uses a "substitution matrix" which encodes whether
+two specific genes are the equivalent over a genome sequence. Here, we explore the use of a similarity
+matrix between semantic embeddings of words along two texts as a replacement of the substitution matrix to perform sequence 
+alignment over natural langauge documents.
 The similarity matrix is calculated by finding the cosine distance between the embedded vectors of the words.
 
 In order to allow for a more fuzzy alignment of the two texts, a gaussian
